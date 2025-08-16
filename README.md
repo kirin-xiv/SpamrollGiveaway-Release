@@ -1,48 +1,77 @@
-# SpamrollGiveaway
+# Spamroll Giveaway Plugin
 
-A Final Fantasy XIV plugin for hosting interactive giveaways where players use `/random` commands to compete for prizes.
+Run giveaways, Brain off!
 
-## Description
+Automates spamroll giveaway games in FFXIV by tracking rolls and determining winners automatically. No more manual counting or forgetting who won what numbers!
 
-SpamrollGiveaway is a Dalamud plugin that allows hosts to set target winning numbers and have players type `/random` until someone hits the specified numbers. Perfect for creating engaging community events and contests in FFXIV.
+## 🎯 What It Does
 
-## Features
+- Automatically detects `/random` rolls during your giveaway games
+- Configurable winning numbers (default: 111, 222, 333, 444, 555, 666, 777, 888, 999)
+- Smart multiple winner support - one winner per winning number
+- Prevents duplicate winners across numbers (configurable)
+- Announces winners automatically to chat
+- Rate-limited chat messages to avoid FFXIV spam detection
+- Chat channel selection (Say, Party, Yell, Shout)
+- Custom announcement templates
 
-- **Target Number System**: Set specific winning numbers for players to hit
-- **Sound Effects**: Audio feedback for wins and game events
-- **Multiple Winners**: Support for contests with multiple prize winners
-- **Comprehensive Winner Logic**: Smart detection and handling of winning conditions
-- **Easy Setup**: Simple configuration through in-game interface
+## 📥 Installation
 
-## Installation
-
-### Via Custom Plugin Repository
-
-1. Open the Dalamud Plugin Installer (`/xlplugins`)
-2. Go to Settings → Experimental
-3. Add the following repository URL:
+1. Add this repository URL to your Dalamud plugin sources:
    ```
    https://raw.githubusercontent.com/kirin-xiv/SpamrollGiveaway-Release/main/repo.json
    ```
-4. Click the "+" button to add the repository
-5. Go back to Available Plugins and search for "SpamrollGiveaway"
-6. Click Install
 
-## Usage
+2. Install "Spamroll Giveaway" from the plugin installer
 
-1. Open the plugin configuration window
-2. Set your target winning numbers
-3. Announce the giveaway to your players
-4. Players use `/random` command to participate
-5. Plugin automatically detects and announces winners
+3. Type `/spamroll` to open the plugin window
 
-## Repository Information
+## 🎮 How to Use
 
-- **Author**: Kirin
-- **Version**: 1.0.0.0
-- **Dalamud API Level**: 13
-- **Tags**: giveaway, random, contest, ffxiv, minigame
+1. **Start a game**: Use `/spamstart` or click "Start Game" in the plugin window
+2. **Watch for rolls**: The plugin automatically detects winning rolls
+3. **Winners announced**: Winners are automatically announced to your chosen chat channel
+4. **Game ends**: Automatically or manually with `/spamstop`
 
-## Support
+### Example Flow
+```
+[Spamroll] Game started! Winning numbers: 111, 222, 333 - Type /random to participate!
+WINNER: PlayerName rolled 222!
+WINNER: AnotherPlayer rolled 111!
+[Spamroll] Game stopped. 2 winners.
+```
 
-If you encounter any issues or have suggestions, please open an issue in the main development repository.
+## 🔧 Commands
+
+- `/spamroll` - Open the main plugin window
+- `/spamroll config` - Open configuration directly  
+- `/spamstart` - Start collecting rolls
+- `/spamstop` - Stop the current game
+- `/spamconfig` - Open configuration window
+
+## 📋 Features
+
+### Smart Winner Detection
+- Only processes configured winning numbers
+- First come, first served for each number
+- Optional: Same player can win multiple numbers
+- Automatic game completion when all numbers claimed
+
+### Rate-Limited Messaging
+- 2-second delays between chat messages
+- Prevents FFXIV chat spam detection
+- Queued announcements for multiple winners
+- "Clear Queue" button to cancel pending messages
+
+### Flexible Configuration
+- 1-9 winning numbers supported
+- Multiple winner modes
+- Custom chat templates with placeholders
+- Game timeout settings
+- Sound notifications
+
+## 🎭 Perfect for FFXIV Events!
+
+This plugin was designed for FFXIV event organizers running giveaway games. It eliminates manual work and ensures fair, consistent games every time. The rate limiting system means your messages won't get blocked, and the flexible winning number system works for any type of giveaway!
+
+**Made with ❤️ by Kirin**
