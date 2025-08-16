@@ -22,7 +22,7 @@
     "DownloadLinkTesting": "https://raw.githubusercontent.com/kirin-xiv/SpamrollGiveaway-Release/main/latest.zip",
     "DownloadCount": 0,
     "LastUpdate": 0,
-    "IconUrl": "",
+    "IconUrl": "https://raw.githubusercontent.com/kirin-xiv/SpamrollGiveaway-Release/main/SpamrollGiveaway.ico",
     "ImageUrls": [],
     "Changelog": "Initial release with sound effects, multiple winners support, and comprehensive winner logic"
   }
