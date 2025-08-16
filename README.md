@@ -1,5 +1,20 @@
 # Spamroll Giveaway Plugin
 
+> ## 🔄 **REPOSITORY MIGRATION NOTICE**
+> 
+> **This plugin has moved to a centralized repository!**
+> 
+> **New Installation URL:** 
+> ```
+> https://raw.githubusercontent.com/kirin-xiv/KirinPlugins/main/pluginmaster.json
+> ```
+> 
+> **Please update your Dalamud settings** to use the new central repository for better updates and access to all Kirin plugins.
+> 
+> [📋 View Migration Guide](./MIGRATION_NOTICE.md) | [🏠 Central Repository](https://github.com/kirin-xiv/KirinPlugins)
+
+---
+
 Run giveaways, Brain off!
 
 Automates spamroll giveaway games in FFXIV by tracking rolls and determining winners automatically. No more manual counting or forgetting who won what numbers!
@@ -12,11 +27,18 @@ Automates spamroll giveaway games in FFXIV by tracking rolls and determining win
 - Prevents duplicate winners across numbers (configurable)
 - Announces winners automatically to chat
 - Rate-limited chat messages to avoid FFXIV spam detection
-- Chat channel selection (Say, Party, Yell, Shout)
+- Chat channel selection (Say, Party, Yell, Shout, Echo)
 - Custom announcement templates
 
 ## 📥 Installation
 
+### ✅ Recommended: Central Repository
+1. Add this repository URL to your Dalamud plugin sources:
+   ```
+   https://raw.githubusercontent.com/kirin-xiv/KirinPlugins/main/pluginmaster.json
+   ```
+
+### ⚠️ Legacy: Individual Repository (Deprecated)
 1. Add this repository URL to your Dalamud plugin sources:
    ```
    https://raw.githubusercontent.com/kirin-xiv/SpamrollGiveaway-Release/main/repo.json
@@ -56,6 +78,12 @@ WINNER: AnotherPlayer rolled 111!
 - First come, first served for each number
 - Optional: Same player can win multiple numbers
 - Automatic game completion when all numbers claimed
+
+### Rate-Limited Messaging
+- 2-second delays between chat messages
+- Prevents FFXIV chat spam detection
+- Queued announcements for multiple winners
+- "Clear Queue" button to cancel pending messages
 
 ### Flexible Configuration
 - 1-9 winning numbers supported
