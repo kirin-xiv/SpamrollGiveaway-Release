@@ -1,0 +1,20 @@
+{
+  "Author": "your name here",
+  "Name": "SpamrollGiveaway",
+  "InternalName": "SpamrollGiveaway",
+  "AssemblyVersion": "0.0.0.1",
+  "Description": "SpamrollGiveaway plugin for managing automated giveaways in FFXIV.",
+  "ApplicableVersion": "any",
+  "Tags": [
+    "giveaway",
+    "automation",
+    "ffxiv"
+  ],
+  "DalamudApiLevel": 12,
+  "LoadRequiredState": 0,
+  "LoadSync": false,
+  "CanUnloadAsync": false,
+  "LoadPriority": 0,
+  "Punchline": "Automated giveaway system for FFXIV.",
+  "AcceptsFeedback": true
+}
