@@ -57,12 +57,6 @@ WINNER: AnotherPlayer rolled 111!
 - Optional: Same player can win multiple numbers
 - Automatic game completion when all numbers claimed
 
-### Rate-Limited Messaging
-- 2-second delays between chat messages
-- Prevents FFXIV chat spam detection
-- Queued announcements for multiple winners
-- "Clear Queue" button to cancel pending messages
-
 ### Flexible Configuration
 - 1-9 winning numbers supported
 - Multiple winner modes
